@@ -1,14 +1,19 @@
 <template>
   <v-container fluid>
-    <v-row>
-      <v-col>slider</v-col>
+    <v-row class="mt-n3 mx-n3" no-gutters>
+      <v-col>
+        <v-img height="500" src="https://picsum.photos/id/17/1920/500" />
+      </v-col>
     </v-row>
-    <v-row>
+    <v-row class="primary">
       <v-col>
         <v-container>
           <v-row>
-            <v-col>
-              <h1>Quem somos</h1>
+            <v-col class="white--text">
+              <h1 id="quem-somos" class="display-2 text-center text-uppercase">
+                Quem somos
+              </h1>
+              <v-divider class="my-6" />
               <p>
                 A Vitae Saúde é uma empresa inovadora que foca em dar a seus
                 beneficiários um atendimento de qualidade, rápido e com preço
@@ -42,7 +47,13 @@
         <v-container>
           <v-row>
             <v-col>
-              <h1>Como funciona</h1>
+              <h1
+                id="como-funciona"
+                class="display-2 text-center text-uppercase"
+              >
+                Como funciona
+              </h1>
+              <v-divider class="my-6" />
               <p>
                 O Beneficiário irá até nossa unidade, onde será apresentado o
                 nosso plano de benefícios. Após a adesão deste, poderá colocar

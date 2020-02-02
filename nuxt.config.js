@@ -4,6 +4,9 @@ import pt from 'vuetify/es5/locale/pt';
 export default {
   mode: 'spa',
   head: {
+    htmlAttrs: {
+      lang: 'pt-br'
+    },
     titleTemplate: '%s - Vitae Saúde',
     title: 'Carregando',
     meta: [
@@ -12,7 +15,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Sua saúde na palma da mão'
+        content: 'Sua saúde na palma da mão.'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -43,23 +46,15 @@ export default {
     theme: {
       dark: false,
       themes: {
-        dark: {
-          primary: colors.teal.darken1,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        },
+        dark: {},
         light: {
           primary: '#179d83',
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          error: '#b00020',
+          success: colors.green.darken2
         }
       }
     }

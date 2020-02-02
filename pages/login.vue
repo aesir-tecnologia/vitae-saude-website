@@ -1,6 +1,6 @@
 <template>
   <validation-observer ref="obs" v-slot="{ handleSubmit }">
-    <v-container class="fill-height grey lighten-3" fluid>
+    <v-container class="grey lighten-3" fill-height fluid>
       <v-row>
         <v-col>
           <v-form @submit.prevent="handleSubmit(submit)">
