@@ -1,0 +1,2 @@
+/api/*      https://api.vitaesaudevr.com.br/api/:splat    200
+/*          /index.html                                   200
