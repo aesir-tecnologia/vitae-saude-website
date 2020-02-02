@@ -57,7 +57,8 @@ export default {
           success: colors.green.darken2
         }
       }
-    }
+    },
+    treeShake: true
   },
   build: {
     extend(config, ctx) {}
