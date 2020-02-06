@@ -18,7 +18,7 @@ export default {
         content: 'Sua saúde na palma da mão.'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    // link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   loading: { color: '#fff' },
   css: [],
@@ -39,6 +39,11 @@ export default {
   },
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    defaultAssets: {
+      font: {
+        family: 'Raleway'
+      }
+    },
     lang: {
       locales: { pt },
       current: 'pt'

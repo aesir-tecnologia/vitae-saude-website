@@ -1,16 +1,31 @@
 <template>
-  <v-container fluid>
+  <v-container fluid pb-0>
     <v-row class="mt-n3 mx-n3" no-gutters>
-      <v-col>
-        <v-img height="500" src="https://picsum.photos/id/17/1920/500" />
-      </v-col>
+      <v-carousel cycle interval="6000">
+        <v-carousel-item :src="require('@/assets/slides/slide-1.jpg')">
+          <v-sheet color="rgba(0, 0, 0, 0.3)" height="100%" tile>
+            <v-row class="fill-height" align="center">
+              <v-col class="text-center">
+                <div class="display-3">Previnir é melhor do que remediar</div>
+                <div class="headline">
+                  Tenha o melhor plano de benefícios da região e proteja quem
+                  você mais ama.
+                </div>
+              </v-col>
+            </v-row>
+          </v-sheet>
+        </v-carousel-item>
+        <v-carousel-item
+          :src="require('@/assets/slides/slide-2.jpg')"
+        ></v-carousel-item>
+      </v-carousel>
     </v-row>
     <v-row class="primary">
       <v-col>
         <v-container>
           <v-row>
             <v-col class="white--text">
-              <h1 id="quem-somos" class="display-2 text-center text-uppercase">
+              <h1 id="quem-somos" class="display-1 text-center text-uppercase">
                 Quem somos
               </h1>
               <v-divider class="my-6" />
@@ -49,7 +64,7 @@
             <v-col>
               <h1
                 id="como-funciona"
-                class="display-2 text-center text-uppercase"
+                class="display-1 text-center text-uppercase"
               >
                 Como funciona
               </h1>
@@ -85,12 +100,56 @@
         </v-container>
       </v-col>
     </v-row>
+    <v-row class="primary">
+      <v-col>
+        <v-container>
+          <v-row>
+            <v-col class="white--text">
+              <h1 id="beneficios" class="display-1 text-center text-uppercase">
+                Guia de Benefícios
+              </h1>
+              <v-divider class="my-6" />
+              <v-tabs background-color="primary" dark grow>
+                <v-tab>Consultas Médicas</v-tab>
+                <v-tab>Exames Laboratoriais</v-tab>
+                <v-tab>Exames de Imagem</v-tab>
+                <v-tab>Tratamento Odontológico</v-tab>
+
+                <v-tab-item>
+                  <consultas-medicas />
+                </v-tab-item>
+                <v-tab-item>
+                  <exames-laboratoriais />
+                </v-tab-item>
+                <v-tab-item>
+                  <exames-imagem />
+                </v-tab-item>
+                <v-tab-item>
+                  <odontologico />
+                </v-tab-item>
+              </v-tabs>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
+import ConsultasMedicas from '@/components/consultas-medicas';
+import ExamesLaboratoriais from '@/components/exames-laboratoriais';
+import ExamesImagem from '@/components/exames-imagem';
+import Odontologico from '@/components/odontologico';
+
 export default {
   name: 'HomePage',
+  components: {
+    ConsultasMedicas,
+    ExamesLaboratoriais,
+    ExamesImagem,
+    Odontologico
+  },
   head: {
     title: 'Home'
   }
