@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="gelo">
     <v-row class="black--text">
       <v-col>
         <v-img
@@ -33,26 +33,52 @@
             centrodesauderenascer.com.br
           </a>
         </v-chip>
-        <h3 class="my-6">Especialidades Médicas</h3>
-        <v-simple-table>
-          <thead>
-            <tr>
-              <th class="text-center">Profissional</th>
-              <th class="text-center">Especialidade</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dr Cláudio Duarte</td>
-              <td>Clínica Médica</td>
-            </tr>
-            <tr>
-              <td>Dr Lucas Martins</td>
-              <td>Angiologia</td>
-            </tr>
-          </tbody>
-        </v-simple-table>
       </v-col>
+    </v-row>
+    <v-row class="black--text">
+      <v-col class="text-center">
+        <h3 class="my-6">Especialidades Médicas</h3>
+      </v-col>
+    </v-row>
+    <v-row class="black--text text-center">
+      <v-col>Angiologia</v-col>
+      <v-col>Cardiologia</v-col>
+      <v-col>Clínica Geral</v-col>
+      <v-col>Dermatologia</v-col>
+      <v-col>Endocrinologia</v-col>
+      <v-col>Fisioterapia</v-col>
+    </v-row>
+    <v-row class="black--text text-center">
+      <v-col>Fisioterapia Infantil</v-col>
+      <v-col>Fonoaudiologia</v-col>
+      <v-col>Gastroenterologia</v-col>
+      <v-col>Gastropediatria</v-col>
+      <v-col>Geriatria</v-col>
+      <v-col>Ginecologia</v-col>
+    </v-row>
+    <v-row class="black--text text-center">
+      <v-col>Medicina Ortomolecular</v-col>
+      <v-col>RPG ( Reeducação Postural Global )</v-col>
+      <v-col>Mastologia</v-col>
+      <v-col>Neurologia</v-col>
+      <v-col>Neuropsiquiatria</v-col>
+      <v-col>Nutrição</v-col>
+    </v-row>
+    <v-row class="black--text text-center">
+      <v-col>Obstetrícia</v-col>
+      <v-col>Ortopedia</v-col>
+      <v-col>Otorrinolaringologia</v-col>
+      <v-col>Pediatria</v-col>
+      <v-col>Pneumologia</v-col>
+      <v-col>Pneumopediatria</v-col>
+    </v-row>
+    <v-row class="black--text text-center">
+      <v-col>Proctologia</v-col>
+      <v-col>Psicologia</v-col>
+      <v-col>Psicopedagogia</v-col>
+      <v-col>Psiquiatria</v-col>
+      <v-col>Psiquiatria Infantil</v-col>
+      <v-col>Reumatologia</v-col>
     </v-row>
   </v-container>
 </template>

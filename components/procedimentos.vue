@@ -4,7 +4,22 @@
       <v-tab>Serviços</v-tab>
       <v-tab>Exames</v-tab>
     </v-tabs>
-    <v-data-table :headers="headers" :items="items" :loading="loading">
+    <v-data-table
+      :headers="headers"
+      :items="items"
+      :loading="loading"
+      :search="search"
+    >
+      <template v-slot:top>
+        <v-text-field
+          v-model="search"
+          class="mt-2"
+          clearable
+          dense
+          outlined
+          placeholder="Digite o procedimento para pesquisar..."
+        />
+      </template>
       <template v-slot:item.valor_repasse="{ item }">
         {{ item.valor_repasse | currency }}
       </template>
@@ -28,6 +43,7 @@ export default {
     error: null,
     loading: false,
     tab: null,
+    search: null,
     servicos: [],
     exames: []
   }),
@@ -37,11 +53,6 @@ export default {
         {
           text: 'Nome',
           value: 'nome'
-        },
-        {
-          text: 'Valor repasse',
-          value: 'valor_repasse',
-          sortable: false
         },
         {
           text: 'Valor referência',

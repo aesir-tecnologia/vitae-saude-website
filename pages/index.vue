@@ -20,12 +20,15 @@
         ></v-carousel-item>
       </v-carousel>
     </v-row>
-    <v-row class="primary">
+    <v-row class="primary fundo">
       <v-col>
         <v-container>
           <v-row>
             <v-col class="white--text">
-              <h1 id="quem-somos" class="display-1 text-center text-uppercase">
+              <h1
+                id="quem-somos"
+                class="display-1 font-weight-bold text-center text-uppercase"
+              >
                 Quem somos
               </h1>
               <v-divider class="my-6" />
@@ -57,14 +60,14 @@
         </v-container>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="gelo">
       <v-col>
         <v-container>
           <v-row>
             <v-col>
               <h1
                 id="como-funciona"
-                class="display-1 text-center text-uppercase"
+                class="display-1 font-weight-bold primary--text text-center text-uppercase"
               >
                 Como funciona
               </h1>
@@ -100,12 +103,15 @@
         </v-container>
       </v-col>
     </v-row>
-    <v-row class="primary">
+    <v-row class="primary fundo">
       <v-col>
         <v-container>
           <v-row>
             <v-col class="white--text">
-              <h1 id="beneficios" class="display-1 text-center text-uppercase">
+              <h1
+                id="beneficios"
+                class="display-1 font-weight-bold text-center text-uppercase"
+              >
                 Guia de Benefícios
               </h1>
               <v-divider class="my-6" />

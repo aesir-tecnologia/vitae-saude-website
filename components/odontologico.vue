@@ -1,11 +1,11 @@
 <template>
-  <v-container>
+  <v-container class="gelo">
     <v-row class="black--text">
       <v-col>
         <v-img
-          :src="require('@/assets/logos/dentistas.jpg')"
+          :src="require('@/assets/logos/dentistas.png')"
           class="mx-auto"
-          width="300"
+          width="400"
         />
       </v-col>
       <v-col class="text-center">
@@ -24,7 +24,15 @@
         <v-chip color="black" outlined>
           <v-icon left>mdi-phone</v-icon>(24) 3342-8277
         </v-chip>
+      </v-col>
+    </v-row>
+    <v-row class="black--text">
+      <v-col class="text-center">
         <h3 class="my-6">Especialidades Odontológicas</h3>
+      </v-col>
+    </v-row>
+    <v-row class="black--text">
+      <v-col>
         <v-simple-table>
           <thead>
             <tr>
@@ -32,14 +40,54 @@
               <th class="text-center">Especialidade</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="text-center">
             <tr>
-              <td>Marcelo Arbex</td>
-              <td>Clínico Geral</td>
+              <td>Drº Valdecir Ferreira</td>
+              <td>Clínica Geral</td>
             </tr>
             <tr>
-              <td>Dra Suzana Lustosa</td>
-              <td>Ortodontista</td>
+              <td>Drª Fernanda Duque Graça</td>
+              <td>Clínica Geral</td>
+            </tr>
+            <tr>
+              <td>Drª Máira Machado</td>
+              <td>Clínica Geral</td>
+            </tr>
+            <tr>
+              <td>Drª Ivê Freitas Couto</td>
+              <td>Clínica Geral</td>
+            </tr>
+            <tr>
+              <td>Drª Jéssica de Souza Hermosilla</td>
+              <td>Clínica Geral</td>
+            </tr>
+          </tbody>
+        </v-simple-table>
+      </v-col>
+      <v-col>
+        <v-simple-table>
+          <thead>
+            <tr>
+              <th class="text-center">Profissional</th>
+              <th class="text-center">Especialidade</th>
+            </tr>
+          </thead>
+          <tbody class="text-center">
+            <tr>
+              <td>Drª Ivê Freitas Couto</td>
+              <td>Implantodontia</td>
+            </tr>
+            <tr>
+              <td>Drº Júlio Pereira Gonçalves</td>
+              <td>Implantodontia</td>
+            </tr>
+            <tr>
+              <td>Drº Rafael Viana dos Santos Moura</td>
+              <td>Endodontia</td>
+            </tr>
+            <tr>
+              <td>Drª Máira Machado</td>
+              <td>Endodontia</td>
             </tr>
           </tbody>
         </v-simple-table>

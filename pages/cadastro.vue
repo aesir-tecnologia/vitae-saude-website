@@ -75,7 +75,7 @@
                 <v-alert v-if="error" v-text="error" type="error" />
                 <v-alert v-if="success" v-text="success" type="success" />
               </v-card-text>
-              <v-card-actions>
+              <v-card-actions v-if="!success">
                 <v-btn
                   :loading="loading"
                   class="mx-auto"

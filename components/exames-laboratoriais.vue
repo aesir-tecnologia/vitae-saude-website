@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="gelo">
     <v-row class="black--text">
       <v-col>
         <v-img

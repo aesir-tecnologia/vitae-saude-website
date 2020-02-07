@@ -41,7 +41,7 @@ export default {
     customVariables: ['~/assets/variables.scss'],
     defaultAssets: {
       font: {
-        family: 'Raleway'
+        family: 'Montserrat'
       }
     },
     lang: {

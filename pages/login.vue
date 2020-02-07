@@ -12,8 +12,8 @@
               </v-card-title>
               <v-card-subtitle class="text-center">
                 <div>
-                  Utilize o e-mail e senha cadastrados para acessar a sua área
-                  exclusiva.
+                  Utilize o e-mail e senha cadastrados para <br />
+                  acessar a sua área exclusiva.
                 </div>
                 <div>
                   Ou clique para
