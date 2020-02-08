@@ -42,24 +42,32 @@
           </thead>
           <tbody class="text-center">
             <tr>
-              <td>Drº Valdecir Ferreira</td>
+              <td>Dr. Valdecir Ferreira</td>
               <td>Clínica Geral</td>
             </tr>
             <tr>
-              <td>Drª Fernanda Duque Graça</td>
+              <td>Dra. Fernanda Duque Graça</td>
               <td>Clínica Geral</td>
             </tr>
             <tr>
-              <td>Drª Máira Machado</td>
+              <td>Dra. Máira Machado</td>
               <td>Clínica Geral</td>
             </tr>
             <tr>
-              <td>Drª Ivê Freitas Couto</td>
+              <td>Dra. Ivê Freitas Couto</td>
               <td>Clínica Geral</td>
             </tr>
             <tr>
-              <td>Drª Jéssica de Souza Hermosilla</td>
+              <td>Dra. Jéssica de Souza Hermosilla</td>
               <td>Clínica Geral</td>
+            </tr>
+            <tr>
+              <td>Dra. Ivê Freitas Couto</td>
+              <td>Implantodontia</td>
+            </tr>
+            <tr>
+              <td>Dr. Júlio Pereira Gonçalves</td>
+              <td>Implantodontia</td>
             </tr>
           </tbody>
         </v-simple-table>
@@ -74,20 +82,32 @@
           </thead>
           <tbody class="text-center">
             <tr>
-              <td>Drª Ivê Freitas Couto</td>
-              <td>Implantodontia</td>
-            </tr>
-            <tr>
-              <td>Drº Júlio Pereira Gonçalves</td>
-              <td>Implantodontia</td>
-            </tr>
-            <tr>
-              <td>Drº Rafael Viana dos Santos Moura</td>
+              <td>Dr. Rafael Viana dos Santos Moura</td>
               <td>Endodontia</td>
             </tr>
             <tr>
-              <td>Drª Máira Machado</td>
+              <td>Dra. Máira Machado</td>
               <td>Endodontia</td>
+            </tr>
+            <tr>
+              <td>Dr. Jean Soares Cabral</td>
+              <td>Ortodontia</td>
+            </tr>
+            <tr>
+              <td>Dra. Fernanda Duque Graça</td>
+              <td>Ortodontia</td>
+            </tr>
+            <tr>
+              <td>Dr. Marcelo Arantes Pereira</td>
+              <td>Ortodontia</td>
+            </tr>
+            <tr>
+              <td>Dra. Fernanda Duque Graça</td>
+              <td>Odontopediatria</td>
+            </tr>
+            <tr>
+              <td>Dra. Jéssica de Souza Hermosilla</td>
+              <td>Odontopediatria</td>
             </tr>
           </tbody>
         </v-simple-table>
