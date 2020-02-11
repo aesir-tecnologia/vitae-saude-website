@@ -1,23 +1,38 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <v-container>
-        <v-row align="center">
-          <v-col class="d-flex align-center" cols="auto">
-            <!-- <v-img :src="require('@/assets/logo-01.png')" height="35" contain /> -->
-            <v-img :src="require('@/assets/logo-02.png')" height="40" contain />
-          </v-col>
-          <v-col class="d-flex justify-end">
-            <v-btn exact to="/" text>Home</v-btn>
-            <v-btn to="/#quem-somos" text>Quem somos</v-btn>
-            <v-btn to="/#como-funciona" text>Como funciona</v-btn>
-            <v-btn to="/#beneficios" text>Guia de Benefícios</v-btn>
-            <v-btn color="teal darken-2" dark rounded to="/clientes" nuxt>
-              Área do cliente
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-container>
+      <v-img :src="require('@/assets/logo-02.png')" height="40" contain />
+      <template v-if="$vuetify.breakpoint.lgAndUp">
+        <v-btn exact to="/" text>Home</v-btn>
+        <v-btn to="/#quem-somos" text>Quem somos</v-btn>
+        <v-btn to="/#como-funciona" text>Como funciona</v-btn>
+        <v-btn to="/#beneficios" text>Guia de Benefícios</v-btn>
+        <v-btn color="teal darken-2" dark rounded to="/clientes" nuxt>
+          Área do cliente
+        </v-btn>
+      </template>
+      <v-menu v-else offset-y>
+        <template v-slot:activator="{ on }">
+          <v-app-bar-nav-icon v-on="on" />
+        </template>
+        <v-list>
+          <v-list-item exact to="/">
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+          <v-list-item exact to="/#quem-somos">
+            <v-list-item-title>Quem Somos</v-list-item-title>
+          </v-list-item>
+          <v-list-item exact to="/#como-funciona">
+            <v-list-item-title>Como Funciona</v-list-item-title>
+          </v-list-item>
+          <v-list-item exact to="/#beneficios">
+            <v-list-item-title>Guia de Benefícios</v-list-item-title>
+          </v-list-item>
+          <v-list-item exact to="/clientes">
+            <v-list-item-title>Área do Cliente</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
     <v-content>
       <nuxt />
