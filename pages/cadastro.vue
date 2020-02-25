@@ -6,9 +6,7 @@
           <v-form @submit.prevent="handleSubmit(submit)">
             <v-card class="mx-auto" max-width="500px" shaped>
               <v-card-title class="justify-center">
-                <div>
-                  Cadastro de Cliente
-                </div>
+                <div>Cadastro de Cliente</div>
               </v-card-title>
               <v-card-subtitle class="text-center">
                 <div>
@@ -81,9 +79,8 @@
                   class="mx-auto"
                   color="primary"
                   type="submit"
+                  >Cadastrar</v-btn
                 >
-                  Cadastrar
-                </v-btn>
               </v-card-actions>
             </v-card>
           </v-form>
@@ -136,8 +133,8 @@ export default {
       }
     }
   },
-  head: {
+  head: () => ({
     title: 'Cadastro'
-  }
+  })
 };
 </script>

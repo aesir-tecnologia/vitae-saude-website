@@ -156,8 +156,8 @@ export default {
     ExamesImagem,
     Odontologico
   },
-  head: {
+  head: () => ({
     title: 'Home'
-  }
+  })
 };
 </script>
