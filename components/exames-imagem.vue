@@ -28,7 +28,7 @@
         </v-chip>
       </v-col>
     </v-row>
-    <v-divider class="my-12" />
+    <!-- <v-divider class="my-12" />
     <v-row class="black--text">
       <v-col>
         <v-img
@@ -52,6 +52,6 @@
           </a>
         </v-chip>
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>

@@ -54,9 +54,9 @@ export default {
       await this.$auth.logout();
     }
   },
-  head: {
+  head: () => ({
     title: 'Área do Cliente'
-  },
+  }),
   middleware: 'auth'
 };
 </script>

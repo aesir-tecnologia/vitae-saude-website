@@ -101,8 +101,8 @@ export default {
       }
     }
   },
-  head: {
+  head: () => ({
     title: 'Login'
-  }
+  })
 };
 </script>
