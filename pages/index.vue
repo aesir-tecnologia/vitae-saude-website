@@ -16,7 +16,7 @@
           </v-sheet>
         </v-carousel-item>
         <v-carousel-item
-          :src="require('@/assets/slides/slide-2.jpg')"
+          :src="require('@/assets/slides/slide-corona.jpg')"
         ></v-carousel-item>
       </v-carousel>
     </v-row>
