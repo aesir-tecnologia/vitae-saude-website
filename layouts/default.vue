@@ -52,7 +52,7 @@
               Av. Amaral Peixoto, 363 - Sala 204 <br />
               Centro, Volta Redonda - RJ
             </p>
-            <p><v-icon left>mdi-phone</v-icon>(24) 3300-0000</p>
+            <p><v-icon left>mdi-phone</v-icon>(24) 3337-5791</p>
             <p><v-icon left>mdi-whatsapp</v-icon>(24) 98106-1365</p>
           </v-col>
           <v-col cols="12" md="4">
