@@ -63,7 +63,7 @@
                 target="_blank"
                 text
               >
-                <v-icon class="mx-2" large>mdi-facebook-box</v-icon>
+                <v-icon class="mx-2" large>mdi-facebook</v-icon>
               </v-btn>
               <v-btn
                 href="https://www.instagram.com/vitaesaudevr/"
