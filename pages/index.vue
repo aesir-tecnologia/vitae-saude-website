@@ -82,7 +82,7 @@
               <p>
                 O Beneficiário irá até nossa unidade, onde será apresentado o
                 nosso plano de benefícios. Após a adesão deste, poderá colocar
-                também seus dependentes legais (filhos até 18 anos e cônjuge), e
+                também seus dependentes legais (filhos e cônjuge), e
                 seus ascendentes (pai e mãe) sem custo adicional na mensalidade.
               </p>
               <p>
