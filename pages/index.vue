@@ -1,23 +1,30 @@
 <template>
   <v-container fluid pb-0>
     <v-row class="mt-n3 mx-n3" no-gutters>
-      <v-carousel cycle interval="6000">
-        <v-carousel-item :src="require('@/assets/slides/slide-1.jpg')">
-          <v-sheet color="rgba(0, 0, 0, 0.3)" height="100%" tile>
-            <v-row class="fill-height" align="center">
-              <v-col class="text-center">
-                <div class="display-3">Previnir é melhor do que remediar</div>
-                <div class="headline">
-                  Tenha o melhor plano de benefícios da região e proteja quem
-                  você mais ama.
-                </div>
-              </v-col>
-            </v-row>
-          </v-sheet>
+      <v-carousel
+        interval="6000"
+        cycle
+        height="auto"
+        show-arrows-on-hover
+        min-height="650"
+        max-height="250"
+      >
+        <v-carousel-item>
+          <v-img
+            :src="require('@/assets/slides/slide-4.png')"
+            height="auto"
+            max-height="650"
+            min-height="250"
+          ></v-img>
         </v-carousel-item>
-        <v-carousel-item
-          :src="require('@/assets/slides/slide-corona.jpg')"
-        ></v-carousel-item>
+        <v-carousel-item>
+          <v-img
+            :src="require('@/assets/slides/slide-3.png')"
+            height="auto"
+            max-height="650"
+            min-height="250"
+          ></v-img>
+        </v-carousel-item>
       </v-carousel>
     </v-row>
     <v-row class="primary fundo">
@@ -104,7 +111,7 @@
       </v-col>
     </v-row>
     <v-row class="primary fundo">
-      <v-col>
+      <v-col class="container_benefits">
         <v-container>
           <v-row>
             <v-col class="white--text">
@@ -115,12 +122,16 @@
                 Guia de Benefícios
               </h1>
               <v-divider class="my-6" />
-              <v-tabs background-color="primary" dark grow>
+              <v-tabs
+                background-color="primary"
+                dark
+                grow
+                class="container_tabs"
+              >
                 <v-tab>Consultas Médicas</v-tab>
                 <v-tab>Exames Laboratoriais</v-tab>
                 <v-tab>Exames de Imagem</v-tab>
                 <v-tab>Tratamento Odontológico</v-tab>
-
                 <v-tab-item>
                   <consultas-medicas />
                 </v-tab-item>
@@ -161,3 +172,19 @@ export default {
   })
 };
 </script>
+<style>
+@media (max-width: 32em) {
+  .container_benefits {
+    padding: 0px;
+  }
+  .container_tabs .v-slide-group__prev {
+    display: none;
+  }
+  h1#beneficios,
+  h1#como-funciona,
+  h1#quem-somos {
+    font-size: 20px !important;
+    line-height: auto !important;
+  }
+}
+</style>

@@ -50,5 +50,29 @@
         </v-chip>
       </v-col>
     </v-row>
+    <v-row class="black--text">
+      <v-col>
+        <v-img
+          :src="require('@/assets/logos/icc.png')"
+          class="mx-auto"
+          width="200"
+        />
+      </v-col>
+      <v-col class="text-center">
+        <h2 class="primary--text">ICC - Hospital Santa Cecília</h2>
+        <p>
+          Rua 41C, 160 Volta Redonda - Vila Santa Cecília
+        </p>
+        <v-chip class="mx-1" color="black" outlined>
+          <v-icon left>mdi-phone</v-icon>(24) 3344-3355
+        </v-chip>
+        <v-chip class="mx-1" color="black" outlined>
+          <v-icon left>mdi-web</v-icon>
+          <a href="https://www.hospitalsantaceciliavr.org.br" target="_blank">
+            hospitalsantaceciliavr.org.br
+          </a>
+        </v-chip>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
