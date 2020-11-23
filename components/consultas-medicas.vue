@@ -61,8 +61,8 @@
         <br />
         <v-chip color="black" outlined>
           <v-icon left>mdi-web</v-icon>
-          <a href="http://www.centrodesauderenascer.com.br/" target="_blank">
-            centrodesauderenascer.com.br
+          <a href="https://www.viesante.com.br" target="_blank">
+            viesante.com.br
           </a>
         </v-chip>
       </v-col>
