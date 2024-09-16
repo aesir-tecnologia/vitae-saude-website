@@ -2,7 +2,8 @@ import colors from 'vuetify/es5/util/colors';
 import pt from 'vuetify/es5/locale/pt';
 
 export default {
-  mode: 'spa',
+  target: 'static',
+  ssr: false,
   head: {
     htmlAttrs: {
       lang: 'pt-br'
@@ -30,9 +31,10 @@ export default {
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/vuetify'],
   modules: ['@nuxtjs/axios', '@nuxtjs/auth'],
   axios: {
+    baseURL: 'https://api.vitaesaudevr.com.br/api',
     prefix: '/api',
     progress: false,
-    proxy: true
+    proxy: false
   },
   proxy: {
     '/api': 'http://localhost:8000'
